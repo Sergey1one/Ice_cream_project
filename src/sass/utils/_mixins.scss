@@ -1,0 +1,30 @@
+// Миксины для медиа-правил в "точках перелома"
+
+// Смартфон
+@mixin smartphone {
+    @media screen and (min-width: $mobile) {
+        @content;
+    }
+}
+
+// Планшет
+@mixin tab {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+// Десктоп
+@mixin desk {
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
+}
+
+// Миксин для компактной записи параметров шрифта
+@mixin SetFont($fs, $lh, $fw, $ls) {
+    font-size: $fs;
+    line-height: $lh / $fs;
+    font-weight: $fw;
+    letter-spacing: $ls;
+}
