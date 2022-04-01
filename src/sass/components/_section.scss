@@ -1,0 +1,46 @@
+.section {
+    // Паддинги на мобилке и планшете 
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    // Паддинги на десктопе 
+    @include desk {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+// Секция без верхнего паддинга (Advantages)
+.section--no-padding-top {
+    padding-top: 0px;
+}
+
+// Заголовок Секции
+.section__title {
+    @include setFont(34px, 39px, 400, 0.04em);
+    color: var(--color-accent);
+    text-transform: uppercase;
+
+    @include tab {
+        @include setFont(48px, 55px, null, null);
+    }
+
+    @include desk {
+        @include setFont(58px, 66px, null, 0.06em);
+    }
+}
+
+// Подзаголовок Секции
+.section__subtitle {
+    @include setFont(18px, 21px, 400, null);
+    color: var(--color-accent-medium);
+    text-transform: uppercase;
+
+    @include tab {
+        @include setFont(26px, 30px, null, null);
+    }
+
+    @include desk {
+        @include setFont(30px, 34px, null, 0.04em);
+    }
+}
