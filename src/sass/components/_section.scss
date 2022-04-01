@@ -17,6 +17,9 @@
 
 // Заголовок Секции
 .section__title {
+    margin-top: 15px;
+    font-family: var(--font-accent);
+
     @include setFont(34px, 39px, 400, 0.04em);
     color: var(--color-accent);
     text-transform: uppercase;
@@ -26,12 +29,14 @@
     }
 
     @include desk {
+        margin-top: 16px;
         @include setFont(58px, 66px, null, 0.06em);
     }
 }
 
 // Подзаголовок Секции
 .section__subtitle {
+    font-family: var(--font-accent);
     @include setFont(18px, 21px, 400, null);
     color: var(--color-accent-medium);
     text-transform: uppercase;
