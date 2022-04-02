@@ -1,0 +1,69 @@
+// HEADER**************
+.header {
+    padding-top: 8px;
+
+    @include tab {
+        padding-top: 32px;
+    }
+}
+
+.header-hero__common-bgc {
+    background-color: var(--color-accent-light);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-wrap {
+    @include tab {
+        display: flex;
+    }
+}
+
+.menu-btn {
+   background: transparent;
+   border: transparent;
+
+    @include tab {
+        margin-right: 32px;
+    }
+}
+
+
+
+.menu-btn--buy-now {
+    display: none;
+
+    @include tab {
+        display: block;
+        width: 160px;
+    }
+}
+
+// HERO************
+.hero {
+    padding-top: 194px;
+    padding-bottom: 158px;
+}
+
+.hero-title {
+    font-family: var(--font-accent);
+    font-size: 26px;
+    color: #fff;
+    line-height: calc(30px / 26px);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+}
+
+.hero-title--dark-part {
+    color: var(--color-accent);
+    font-size: 48px;
+}
+
+.hero-btn {
+    margin-right: 8px;
+}
