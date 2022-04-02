@@ -1,26 +1,30 @@
-<div class=“header-hero__common-bgc”>
-  <header class=“header”>
-    <div class=“container header-container”>
-      <img srcset=“” scr=“” alt="logo" />
-      <div class=“btn-wrap”>
-        <button class=“menu-btn” type=“button”>
-          <svg class=“menu-btn__icon” width=“20” height=“12">
-            <!-- <use class=“menu-btn__icon-burger” href=“../images/icons/sprite.svg#icon-burger”></use>
-        <use class=“menu-btn__icon-close” href=“../images/icons/sprite.svg#icon-close”></use> -->
+<div class="header-hero__common-bgc">
+  <header class="header">
+    <div class="container header-container">
+      <svg class="header-logo" width="200" height="50">
+        <use href="./images/sprite.svg#logo-vector"></use>
+      </svg>
+
+      <div class="btn-wrap">
+        <button class="menu-btn" type="button">
+          <svg class="menu-btn__icon" width="20" height="12">
+            <use class="menu-btn__icon-burger" href="./images/sprite.svg#icon-burger"></use>
+            <use class="menu-btn__icon-close" href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
-        <button class=“menu-btn--buy-now” type=“button”>Buy now</button>
+        <button class="menu-btn--buy-now" type="button">Buy now</button>
       </div>
     </div>
+    <include src="./partials/mobmenu.html"></include>
   </header>
-  <div class=“container”>
-    <section class=“hero”>
-      <h1 class=“hero-title”>
+  <div class="container">
+    <section class="hero">
+      <h1 class="hero-title">
         ice cream<br />
-        made with<br /><span class=“hero-title--dark-part”>passion</span>
+        made with<br /><span class="hero-title--dark-part">passion</span>
       </h1>
-      <button class=“hero-btn” type=“button”>Products</button>
-      <button class=“hero-btn” type=“button”>How it’s made?</button>
+      <button class="hero-btn" type="button">Products</button>
+      <button class="hero-btn" type="button">How it’s made?</button>
       <!-- 2 bg images -->
     </section>
   </div>
