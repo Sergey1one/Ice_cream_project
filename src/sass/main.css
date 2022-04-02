@@ -158,4 +158,10 @@ button {
 .section__title-wrap {
   text-align: center;
 }
+
+.footer {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: var(--color-bg-social);
+}
 /*# sourceMappingURL=main.css.map */
