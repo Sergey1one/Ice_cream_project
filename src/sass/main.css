@@ -158,4 +158,37 @@ button {
 .section__title-wrap {
   text-align: center;
 }
+
+.section--advantages-background {
+  background-color: #FFF5F6;
+}
+
+.advantages__icon {
+  margin-bottom: 16px;
+}
+
+.advantages__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.advantages__text {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
