@@ -1,7 +1,7 @@
 .section--advantages-background {
     background-color: #FFF5F6;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 .advantages__title {
@@ -53,6 +53,10 @@
     @include tab {
         display: flex;
         flex-wrap: wrap;
+        margin: -8px;
+    }
+
+    @include desk {
         margin: -16px;
     }
 }
@@ -67,13 +71,12 @@
     }
     
     @include tab {
-        width: 152px;
-        margin: 16px;
+        margin: 8px;
         flex-basis: calc((100% - 128px) / 4);
     }
 
     @include desk {
-        width: 394px;
+        margin: 16px;
         flex-basis: calc((100% - 96px) / 3);
     }
 }
