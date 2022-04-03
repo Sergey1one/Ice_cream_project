@@ -1,8 +1,7 @@
 :root {
   --color-accent: #D41443;
   --color-accent-dark: #C7133E;
-  
-  3.    : #FFA5BA;
+  --color-accent-medium: #FFA5BA;
   --color-accent-light: #FFB8CA;
   --color-bg-light: #FFF5F6;
   --color-bg-modal: #E17992;
@@ -164,7 +163,7 @@ button {
 .footer {
   padding-top: 50px;
   padding-bottom: 25px;
-  background-color: #fff5f6;
+  background-color: var(--color-bg-light);
 }
 
 .footer-text {
@@ -189,6 +188,42 @@ button {
   font-size: 34px;
   line-height: 1.15;
   letter-spacing: .04em;
-  color: var(--primaryBrandColor);
+  color: var(--color-accent);
+}
+
+.footer-wrap {
+  margin-bottom: 65px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.footer-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--color-bg-social);
+}
+
+.footer-list__icon {
+  fill: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
