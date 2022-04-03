@@ -1,0 +1,99 @@
+.mobile-menu {
+    position: fixed;
+    background-color: var(--color-bg-modal);
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @include tab {
+        width: 254px;
+    }
+
+    @include desk {
+        display: none;
+    }
+}
+
+.menu__btn {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    padding: 0;
+    margin-bottom: 26px;
+    margin-left: auto;
+    margin-right: 20px;
+    align-items: center;
+    border: none;
+    background-color: var(--color-bg-modal);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, :focus {
+        fill: var(--color-accent); 
+    } 
+
+    @include tab {
+        margin-right: 32px;
+    }
+}
+
+.header__btn {
+    display: flex;
+    font-family: var(--font-base);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    width: 209px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding-right: 48px;
+    padding-left: 60px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 22px;
+    border: none;
+    background-color: #ffffff;
+    color: var(--color-accent);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, :focus {
+        background-color: #ECEBEB;
+    }
+
+    @include tab {
+        width: 186px;
+        padding-left: 49px;
+        padding-right: 42px;
+        margin-left: 34px;
+        margin-right: 34px;
+    }
+}
+
+.header__btn-icon {
+    display: block;
+    margin-left: 27px;
+
+    @include tab {
+        margin-left: 21px;
+    }
+}
+
+.mobile-menu__link {
+    display: block;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    padding-left: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, :focus {
+        color: var(--color-accent);
+    }
+    border: 1px solid #E18298;
+}
