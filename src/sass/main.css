@@ -3,6 +3,7 @@
   --color-accent-dark: #C7133E;
   --color-accent-medium: #FFA5BA;
   --color-accent-light: #FFB8CA;
+  --color-bg-light: #FFF5F6;
   --color-bg-modal: #E17992;
   --color-bg-social: #FEA5BB;
   --color-bg-ice-coffee: #F0D1A5;
@@ -155,8 +156,208 @@ button {
   }
 }
 
+.header {
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 32px;
+  }
+}
+
+.header-hero__common-bgc {
+  background-color: var(--color-accent-light);
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.menu-btn {
+  background: transparent;
+  border: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    margin-right: 32px;
+  }
+}
+
+.menu-btn--buy-now {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn--buy-now {
+    display: block;
+    width: 160px;
+  }
+}
+
+.hero {
+  padding-top: 194px;
+  padding-bottom: 158px;
+}
+
+.hero-title {
+  font-family: var(--font-accent);
+  font-size: 26px;
+  color: #fff;
+  line-height: calc(30px / 26px);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.hero-title--dark-part {
+  color: var(--color-accent);
+  font-size: 48px;
+}
+
+.hero-btn {
+  margin-right: 8px;
+}
+
 .section__title-wrap {
   text-align: center;
+}
+
+.about {
+  background-color: #FFF5F6;
+  background-image: url(/images/mobile/milk-mobile-x1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom 200px center;
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about {
+    background-image: url(/images/mobile/milk-mobile-x2.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    background-image: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about {
+    background-image: url(/images/desktop/milk-desktop-x1.png);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about {
+    background-image: url(/images/desktop/milk-desktop-x2.png);
+    background-position: center;
+  }
+}
+
+.text--black {
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+@media screen and (min-width: 1280px) {
+  .text--black {
+    margin-bottom: 32px;
+  }
+}
+
+.text--grey {
+  margin-bottom: 20px;
+  color: #907E82;
+}
+
+@media screen and (min-width: 768px) {
+  .text--grey {
+    margin-bottom: 40px;
+  }
+}
+
+.about__img {
+  width: 100%;
+}
+
+.about__text {
+  padding-right: 60px;
+  font-size: 12px;
+  line-height: 1.58333;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
+
+@media screen and (min-width: 768px) {
+  .about__text {
+    font-size: 14px;
+    line-height: 1.78571;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__text {
+    font-size: 16px;
+    line-height: 1.75;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: -32px;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__list {
+    margin-top: 80px;
+    margin-right: -139px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: calc(100% / 2 - 32px);
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about__item {
+    width: calc(100% / 2 - 139px);
+    margin-right: 139px;
+  }
 }
 
 .footer {
