@@ -1,10 +1,10 @@
 .about {
-    background-color: #FFF5F6;
-    background-image: url(/images/mobile/milk-mobile-x1.png);
+    background-color: var(--color-bg-light);
+    background-image: url('../images/mobile/milk-mobile-x1.png');
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(/images/mobile/milk-mobile-x2.png);
+    background-image: url('../images/mobile/milk-mobile-x2.png');
     }
 
     background-repeat: no-repeat;
@@ -15,12 +15,12 @@
         background-image: none;
     }
     @include desk {
-    background-image: url(/images/desktop/milk-desktop-x1.png);
+    background-image: url('../images/desktop/milk-desktop-x1.png');
     
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(/images/desktop/milk-desktop-x2.png);
+        background-image: url('../images/desktop/milk-desktop-x2.png');
         background-position: center;
     }
     }
