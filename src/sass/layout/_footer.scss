@@ -2,10 +2,25 @@
     padding-top: 50px;
     padding-bottom: 25px;
     background-color: var(--color-bg-light);
+    @include tab {
+        padding-bottom: 18px;
+    }
+    
+    @include desk {
+        padding-bottom: 10px;
+    }
 }
-.footer-text {
-    margin-bottom: 43px;
+
+// .footer-wrap {
+//     margin-bottom: 65px;
+// }
+.footer-wrap {
+    margin-bottom: 65px;
+    @include tab {
+        margin-bottom: 0;
+    }
 }
+
 .footer-text {
     max-width: 232px;
     font-family: 'Titan One';
@@ -13,9 +28,26 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;   
     color: var(--color-accent-medium);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 43px;
+    }
+    
+    @include tab {
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+    }
+    
+    @include desk {
+        font-size: 30px;
+        line-height: 34px;
+        max-width: 100%;
+        
+    }
+    
 }
 .footer-text__span {
     display: block;
@@ -25,10 +57,32 @@
     line-height: 1.15;
     letter-spacing: .04em;
     color: var(--color-accent);
+
+    @include tab {
+    margin-top: 16px;
+    font-size: 48px;
+    line-height: 1.15;
+    letter-spacing: 0.06em;
+    }
+    
+    @include desk {
+    font-size: 58px;
+    line-height: 1.14;
+    letter-spacing: 0.06em;
+    }
 }
 
-.footer-wrap {
-    margin-bottom: 65px;
+.container-wraper {
+    @include tab {
+        display: flex;
+        align-items: null;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+
+    @include desk {
+        margin-bottom: 106px;
+    }
 }
 
 .footer-list {
