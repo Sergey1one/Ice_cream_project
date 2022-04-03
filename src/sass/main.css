@@ -502,7 +502,7 @@ button {
 }
 
 .footer-wrap {
-  margin-bottom: 65px;
+  margin-bottom: 43px;
 }
 
 @media screen and (min-width: 768px) {
@@ -513,7 +513,7 @@ button {
 
 .footer-text {
   max-width: 232px;
-  font-family: 'Titan One';
+  font-family: var(--font-accent);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -530,6 +530,7 @@ button {
 
 @media screen and (min-width: 768px) {
   .footer-text {
+    max-width: 340px;
     font-size: 26px;
     line-height: 30px;
     letter-spacing: 0.04em;
@@ -549,7 +550,7 @@ button {
   margin-top: 17px;
   font-weight: 400;
   font-size: 34px;
-  line-height: 1.15;
+  line-height: 39px;
   letter-spacing: .04em;
   color: var(--color-accent);
 }
@@ -557,8 +558,9 @@ button {
 @media screen and (min-width: 768px) {
   .footer-text__span {
     margin-top: 16px;
+    font-weight: null;
     font-size: 48px;
-    line-height: 1.15;
+    line-height: 55px;
     letter-spacing: 0.06em;
   }
 }
@@ -566,8 +568,7 @@ button {
 @media screen and (min-width: 1280px) {
   .footer-text__span {
     font-size: 58px;
-    line-height: 1.14;
-    letter-spacing: 0.06em;
+    line-height: 66px;
   }
 }
 
@@ -589,6 +590,16 @@ button {
 @media screen and (min-width: 1280px) {
   .container-wraper {
     margin-bottom: 106px;
+  }
+}
+
+.footer-wrap {
+  margin-bottom: 65px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    margin-bottom: 0;
   }
 }
 
@@ -633,13 +644,22 @@ button {
 }
 
 .address {
+  margin-bottom: 43px;
+  font-family: var(--font-base);
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.83;
+  line-height: 22px;
   font-style: normal;
   text-align: right;
   color: #000000;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 .address__link {
@@ -649,8 +669,7 @@ button {
   color: var(--color-accent);
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link:hover, .address__link:focus {
   color: var(--color-accent-medium);
 }
 
@@ -658,8 +677,8 @@ button {
   position: relative;
 }
 
-.footer-box:before {
-  content: "";
+.footer-box::before {
+  content: '';
   position: absolute;
   top: -22px;
   width: 100%;
@@ -667,13 +686,34 @@ button {
   background-color: #e1e1e1;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-box::before {
+    top: -29px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-box::before {
+    top: -9px;
+  }
+}
+
 .footer-rights {
   max-width: 149px;
   margin: 0 auto;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.5;
+  line-height: 21px;
   text-align: center;
   color: #907e82;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-rights {
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
 }
 /*# sourceMappingURL=main.css.map */
