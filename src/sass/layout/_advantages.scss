@@ -1,20 +1,11 @@
 .section--advantages-background {
     background-color: #FFF5F6;
-}
-
-.advantages__icon {
-    margin-bottom: 16px;
-
-    @include tab {
-        margin-bottom: 36px;
-    }
-
-    @include desk {
-        margin-bottom: 40px;
-    }
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .advantages__title {
+    position: relative;
     font-family: 'Titan One';
     font-weight: 400;
     font-size: 36px;
@@ -52,6 +43,7 @@
     }
 
     @include desk {
+        width: 288px;
         font-size: 16px;
         line-height: 1.75;
     }
@@ -61,6 +53,7 @@
     @include tab {
         display: flex;
         flex-wrap: wrap;
+        margin: -16px;
     }
 }
 
@@ -74,17 +67,69 @@
     }
     
     @include tab {
-        width: 162px;
-        &:not(:last-child) {
-            margin-right: 22px;
-        }
+        width: 152px;
+        margin: 16px;
+        flex-basis: calc((100% - 128px) / 4);
     }
 
     @include desk {
-        width: 288px;
-        &:not(:last-child) {
-            margin-right: 142px;
-        }
+        width: 394px;
+        flex-basis: calc((100% - 96px) / 3);
     }
 }
 
+.advantages__item::before {
+    content: '';
+    display: block;
+    margin-bottom: 16px;
+    height: 50px;
+
+    @include tab {
+        margin-bottom: 36px;
+    }
+    
+    @include desk {
+        margin-bottom: 40px;
+    }
+}
+
+
+.advantages__item:nth-child(1) {
+    background-repeat: no-repeat;
+    background-image: url('../images/icon1-x1.png');
+
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-size: 33px 50px;
+        background-image: url('../images/icon1-x2.png');
+    }
+}
+
+.advantages__item:nth-child(2) {
+    background-repeat: no-repeat;
+    background-image: url('../images/icon2-x1.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-size: 50px 50px;
+        background-image: url('../images/icon2-x2.png');
+    }
+}
+
+.advantages__item:nth-child(3) {
+    background-repeat: no-repeat;
+    background-image: url('../images/icon3-x1.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-size: 44px 50px;
+        background-image: url('../images/icon3-x2.png');
+    }
+}
