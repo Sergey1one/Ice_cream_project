@@ -49,7 +49,7 @@
     height: 32px;
     border-radius: 50%;
     transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: var(--color-accent-medium)
+    background-color: var(--color-accent-medium);
 }
 .footer-list__link:hover,.footer-list__link:focus {
     background-color: var(--color-accent);
