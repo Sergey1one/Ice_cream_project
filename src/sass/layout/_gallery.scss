@@ -1,0 +1,9 @@
+.gallery {
+background-image: linear-gradient(to bottom, rgb(255, 245, 246) 42%,
+rgb(255,255,255) 42%);
+
+&_img {
+margin-left: auto;
+margin-right: auto;
+}
+}
