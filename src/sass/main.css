@@ -363,6 +363,120 @@ button {
 .footer {
   padding-top: 50px;
   padding-bottom: 25px;
-  background-color: var(--color-bg-social);
+  background-color: var(--color-bg-light);
+}
+
+.footer-text {
+  margin-bottom: 43px;
+}
+
+.footer-text {
+  max-width: 232px;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--color-accent-medium);
+}
+
+.footer-text__span {
+  display: block;
+  margin-top: 17px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: .04em;
+  color: var(--color-accent);
+}
+
+.footer-wrap {
+  margin-bottom: 65px;
+}
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.footer-list__item + .footer-list__item {
+  margin-left: 28px;
+}
+
+.footer-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--color-accent-medium);
+}
+
+.footer-list__link:hover, .footer-list__link:focus {
+  background-color: var(--color-accent);
+}
+
+.footer-list__icon {
+  fill: #FFFFFF;
+}
+
+.address {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  font-style: normal;
+  text-align: right;
+  color: #000000;
+  margin-bottom: 0;
+}
+
+.address__link {
+  cursor: pointer;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--color-accent);
+}
+
+.address__link:hover,
+.address__link:focus {
+  color: var(--color-accent-medium);
+}
+
+.footer-box {
+  position: relative;
+}
+
+.footer-box:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  width: 100%;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+
+.footer-rights {
+  max-width: 149px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: #907e82;
 }
 /*# sourceMappingURL=main.css.map */
