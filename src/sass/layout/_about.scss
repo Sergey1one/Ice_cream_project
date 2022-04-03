@@ -1,0 +1,84 @@
+.about {
+    background-color: var(--color-bg-light);
+    background-image: url('../images/mobile/milk-mobile-x1.png');
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/mobile/milk-mobile-x2.png');
+    }
+
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom 200px center;
+
+    @include tab {
+        background-image: none;
+    }
+    @include desk {
+    background-image: url('../images/desktop/milk-desktop-x1.png');
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/desktop/milk-desktop-x2.png');
+        background-position: center;
+    }
+    }
+}
+
+.text--black {
+    margin-bottom: 40px;
+    color: #000000;
+    @include desk{
+        margin-bottom: 32px;
+    }
+}
+
+.text--grey {
+    margin-bottom: 20px;
+    color: #907E82;
+    @include tab {
+        margin-bottom: 40px;
+    }
+}
+
+.about__img {
+    width: 100%;
+}
+
+.about__text {
+    padding-right: 60px;
+    @include setFont (12px, 19px, 500, 0.04em);
+    @include tab {
+        @include setFont (14px, 25px, 500, 0.04em);
+        padding-right: 0px;
+    }
+    @include desk {
+        @include setFont (16px, 28px, 500, 0.04em);
+    }
+}
+
+.about__list {
+    @include tab {
+        display: flex;
+    margin-right: -32px;
+    margin-top: 40px;
+}
+@include desk {
+    margin-top: 80px;
+    margin-right: -139px;
+    align-items: center;
+}
+    
+}
+
+.about__item {
+    @include tab {
+        width: calc(100% / 2 - 32px);
+        margin-right: 32px;
+    }
+    @include desk {
+        width: calc(100% / 2 - 139px);
+        margin-right: 139px;
+    }
+}
