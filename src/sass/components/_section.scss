@@ -25,11 +25,11 @@
     text-transform: uppercase;
 
     @include tab {
+        margin-top: 16px;
         @include setFont(48px, 55px, null, null);
     }
 
     @include desk {
-        margin-top: 16px;
         @include setFont(58px, 66px, null, 0.06em);
     }
 }
