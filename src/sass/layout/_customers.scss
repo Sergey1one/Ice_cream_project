@@ -1,6 +1,19 @@
+.swiper{
+   position: relative;
+}
 
 .swiper-slide{
     text-align: center;
+    
+}
+.swiper-slide__quotes{
+    position: absolute;
+    fill: #e1e1e1;
+    width: 54px;
+    height: 40px;
+    top: 30px;
+    left: 53px;
+
 }
 .swiper-slide__text{
     font-family: 'DM Sans';
@@ -9,6 +22,16 @@
     line-height: 255%;
     margin-top: 32px;
     background-color: var(--color-bg-swiper);
+    background-image: linear-gradient(
+        0deg,
+        #e1e1e1 1.61%,
+        transparent 1.61%,
+        transparent 50%,
+        #e1e1e1 50%,
+        #e1e1e1 51.61%,
+        transparent 51.61%,
+        transparent 100%
+      );
     @media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 216%;
@@ -20,19 +43,60 @@
         margin-bottom: 16px;
     }
 }
+
 .swiper-slide__contact{
     font-family: 'DM Sans';
     font-weight: 500;
     font-size: 14px;
     line-height: 186%;  
     margin-top: 16px;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
     @media screen and (min-width: 768px) {
         font-size: 16px;
         line-height: 186%;
+        margin-bottom: 35px;
     }
     @media screen and (min-width: 1280px) {
         font-size: 20px;
         line-height: 186%;
     }
+}
+.swiper-slide__circle {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.swiper-slide__circle-icon {
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background: var(--color-accent-dark);
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+// .swiper-slide-duplicate{
+//     display: inline-block;
+//   margin: 0 6px;
+//   border-radius: 50%;
+//   width: 12px;
+//   height: 12px;
+//   background-color: #d9d9d9;
+// }
+.swiper-pagination-bullet-active{
+  background-image: url(../images/icon_home.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0;
+  background-color: transparent;
+  width: 13px;
+  height: 13px;
+    
+}
+.mySwiper .swiper-initialized{
+    bottom: 0px;
+    left: 0;
+    width: 100%;
 }
