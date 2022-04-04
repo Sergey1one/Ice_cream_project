@@ -1,51 +1,39 @@
 .advantages__section {
-    background-color: #FFF5F6;
+    background-color: var(--color-bg-light);
     background-repeat: no-repeat;
     background-size: contain;
 }
 
 .advantages__title {
-    position: relative;
+    @include setFont(36px, 41px, 400, 0.04em);
     font-family: 'Titan One';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 1.14;
-    letter-spacing: 0.04em;
     color: var(--color-accent);
-
     margin-bottom: 6px;
 
     @include tab {
-        font-size: 48px;
-        line-height: 1.15;
+        @include setFont(48px, 55px, 400, 0.04em);
         margin-bottom: 13px;
     }
 
     @include desk {
-        font-size: 58px;
-        line-height: 1.14;
+        @include setFont(58px, 66px, 400, 0.04em);
         margin-bottom: 16px;
     }
 }
 
 
 .advantages__text {
+    @include setFont(12px, 20px, 700, 0.02em);
     font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.02em;
     color: black;
 
     @include tab {
-        font-size: 14px;
-        line-height: 1.71;
+        @include setFont(14px, 24px, 700, 0.02em);
     }
 
     @include desk {
+        @include setFont(16px, 28px, 700, 0.02em);
         width: 288px;
-        font-size: 16px;
-        line-height: 1.75;
     }
 }
 
@@ -79,60 +67,59 @@
         margin: 16px;
         flex-basis: calc((100% - 96px) / 3);
     }
-}
 
-.advantages__item::before {
-    content: '';
-    display: block;
-    margin-bottom: 16px;
-    height: 50px;
-
-    @include tab {
-        margin-bottom: 36px;
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 16px;
+        height: 50px;
+        
+        @include tab {
+            margin-bottom: 36px;
+        }
+        
+        @include desk {
+            margin-bottom: 40px;
+        }
     }
-    
-    @include desk {
-        margin-bottom: 40px;
-    }
-}
 
-
-.advantages__item:nth-child(1) {
-    background-repeat: no-repeat;
-    background-image: url('../images/icon1-x1.png');
-
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    &:nth-child(1)::before {
+        background-repeat: no-repeat;
         background-size: 33px 50px;
-        background-image: url('../images/icon1-x2.png');
+        background-image: url('../images/icon1-x1.png');
+        
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon1-x2.png');
+        }
     }
-}
 
-.advantages__item:nth-child(2) {
-    background-repeat: no-repeat;
-    background-image: url('../images/icon2-x1.png');
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    &:nth-child(2)::before {
+        background-repeat: no-repeat;
         background-size: 50px 50px;
-        background-image: url('../images/icon2-x2.png');
+        background-image: url('../images/icon2-x1.png');
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon2-x2.png');
+        }
     }
-}
 
-.advantages__item:nth-child(3) {
-    background-repeat: no-repeat;
-    background-image: url('../images/icon3-x1.png');
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    &:nth-child(3)::before {
+        background-repeat: no-repeat;
         background-size: 44px 50px;
-        background-image: url('../images/icon3-x2.png');
+        background-image: url('../images/icon3-x1.png');
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon3-x2.png');
+        }
     }
 }
