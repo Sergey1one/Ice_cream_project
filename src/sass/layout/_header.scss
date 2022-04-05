@@ -263,8 +263,8 @@ background-color: var(--color-accent);
 .hero__img--left {
 animation: animate30 3000ms infinite 1000ms;
 
-&:hero__img--left::before {
-    content: "rotate(30deg)"
+&::before {
+    content: ""
 }
 
 @keyframes animate30 {
