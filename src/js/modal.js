@@ -1,33 +1,24 @@
-// Modal window - BUY-NOW
-
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-open]"),
-//     closeModalBtn: document.querySelector("[data-modal-close]"),
-//     modal: document.querySelector("[data-modal]"),
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-open]"),
+    closeModalBtn: document.querySelector("[data-modal-close]"),
+    modal: document.querySelector("[data-modal]"),
+  };
 
 //   refs.openModalBtn.addEventListener("click", toggleModal);
 //   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-//   function toggleModal() {
-//     refs.modal.classList.toggle("is-hidden");
-//   }
-// <<<<<<< Updated upstream
-// })();
-// =======
-// })(); 
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
 
-// // Modal window - PRODUCT1
-// >>>>>>> Stashed changes
-
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-product1-open]"),
-//     closeModalBtn: document.querySelector("[data-modal-product1-close]"),
-// <<<<<<< Updated upstream
-//     modal: document.querySelector("[data-modal-product1]"),
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-product1-open]"),
+    closeModalBtn: document.querySelector("[data-modal-product1-close]"),
+    modal: document.querySelector("[data-modal-product1]"),
+  };
 
 //   refs.openModalBtn.addEventListener("click", toggleModal);
 //   refs.closeModalBtn.addEventListener("click", toggleModal);
@@ -52,24 +43,17 @@
 //   }
 // })();
 
-// (() => {
-//   const refs = {
-//     openModalBtn: document.querySelector("[data-modal-product3-open]"),
-//     closeModalBtn: document.querySelector("[data-modal-product3-close]"),
-//     modal: document.querySelector("[data-modal-product3]"),
-// =======
-//     modal: document.querySelector("[data-product1-modal]"),
-// >>>>>>> Stashed changes
-//   };
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector("[data-modal-product3-open]"),
+    closeModalBtn: document.querySelector("[data-modal-product3-close]"),
+    modal: document.querySelector("[data-modal-product3]"),
+  };
 
 //   refs.openModalBtn.addEventListener("click", toggleModal);
 //   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-//   function toggleModal() {
-//     refs.modal.classList.toggle("is-hidden");
-//   }
-// <<<<<<< Updated upstream
-// })();
-// =======
-// })(); 
-// >>>>>>> Stashed changes
+  function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+  }
+})();
