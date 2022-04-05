@@ -2,7 +2,7 @@
     background-color: var(--color-accent-light);
     height: 502px;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 
     @include tab {
         height: 416px;
@@ -117,15 +117,32 @@ display: none;
 
     @include tab {
         display: block;
-        // width: 160px;
+        
     }
 }
 
+.header__btn-icon--margin {
+    margin-left: 12px;
+}
 // HERO************
+
+.hero {
+    height: 335px;
+
+    @include desk {
+        height: 574px;
+    }
+}
+
+.hero-container {
+    height: 100%;
+}
 
 .hero-sections {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    height: 100%;
 }
 
 .hero__wrap {
@@ -138,8 +155,8 @@ display: none;
     }
     
     @include tab {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     }
 }
 
@@ -188,7 +205,7 @@ display: none;
     display: flex;
 }
 
-.hero__btn-item {
+.hero__btn-item:not(:last-child) {
     margin-right: 8px;
 }
 
@@ -244,23 +261,25 @@ background-color: var(--color-accent);
 }
 
 .hero__img--left {
-    // animation-name: move;
-    // animation-duration: 3s;
-    // animation-timing-function: linear;
-    // // animation-iteration-count: infinite;
-    
-    
-    // @keyframes move {
-    //     0% {
-    //         transform: translatex(0);
-    //     }
-    
-    //     100% {
-    // transform: translatex(420px);
-            
-    //     }
-    // }
+animation: animate30 3000ms infinite 1000ms;
 
+&:hero__img--left::before {
+    content: "rotate(30deg)"
+}
+
+@keyframes animate30 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(30deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
  @media screen and (max-width:767px) {
         display: none;
@@ -269,7 +288,8 @@ background-color: var(--color-accent);
     @include tab {
         display: flex;
         position: absolute;
-        top: 246px;
+        bottom: 16px;
+        left: 0;
         width: 152px;
         height: 154px;
     }
@@ -277,14 +297,7 @@ background-color: var(--color-accent);
     @include desk {
         width: 213px;
         height: 216px;
-        top: 388px;
-    }
-
-    &:hover, &:focus {
-        background-color: var(--color-accent-dark);
-        border-radius: 50%;
-        transition: background-color 500ms linear,
-        transform 500ms ease-in-out;
+        bottom: 60px;
     }
 }
 
@@ -293,6 +306,7 @@ display: none;
     @include tab {
             display: block;
             padding-left: 150px;
+            margin-top: 58px;
         }
         
         @include desk {
@@ -308,7 +322,7 @@ display: none;
     line-height: 150%;
     color: #FFFFFF;
     margin-bottom: 7px;
-    margin-top: 58px;
+    
 
     @include desk {
         width: 200px;
@@ -356,8 +370,8 @@ display: none;
 
 .ice-cream__wrap {
     position: absolute;
-    top: 83px;
-    left: 36px;
+    top: 19px;
+    left: 16px;
 
     @media screen and (min-width: 414px) and (max-width: 767px) {
         left: 50%;
@@ -365,20 +379,13 @@ display: none;
         height: 372px;
     }
     @include tab {
-        top: 43px;
-        left: 248px;
+        top: -40px;
+        left: 216px;
     }
-
-    @media screen and (min-width: 839px) and (max-width: 1279px) {
-        left: 50%;
-        transform: translateX(-50%);
-    }
-        
-    
 
     @include desk {
-        top: 54px;
-        left: 517px;
+        left: 501px;
+        top: -36px;
     }
 }
 
@@ -404,18 +411,34 @@ display: none;
     }  
 
      &:hover {
-         background-color: var(--color-accent);
-         transform: rotate(180deg);
+        background-color: var(--color-accent);
+        transform: rotate(180deg);
      }
 }
 
 .ice-cream__wrap--top-img {
     position: absolute;
-    top: 9px;
+    top: 15px;
     left: 81px;
 
+    animation: animateY110 1500ms 1 200ms;
+
+    &::before {
+        content: "translateY(110px)";
+    }
+
+    @keyframes animateY110 {
+        0% {
+            transform: translateY(100%);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+
     @include tab {
-        top: 37px;
+        top: 38px;
         left: 74px;
         height: 336px;
     }
@@ -435,7 +458,7 @@ display: none;
     display: none;
 
     animation-name: move;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
     animation-timing-function: linear;
     // animation-iteration-count: infinite;
     
@@ -455,7 +478,7 @@ display: none;
         display: block;
         position: absolute;
         bottom: 0;
-        right: 32px;
+        right: 0;
         width: 190px;
         height: 150px;
     }
