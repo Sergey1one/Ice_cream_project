@@ -82,3 +82,18 @@
         margin-right: 139px;
     }
 }
+
+.btn-about {
+    @include setFont (16px, 21px, 700, 0.04em);
+    color: var(--color-accent);
+    background-color: #FFFFFF;
+    height: 44px;
+    padding-right: 37px;
+    padding-left: 37px;
+
+}
+.btn-about__icon {
+    width: 7px;
+    height: 12px;
+    margin-left: 12px;
+}
