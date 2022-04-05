@@ -68,17 +68,63 @@
   </div>
 </div>
 
-<!-- Modal window - PRODUCT1 -->
+<!-- Modal window - PRODUCT1 - HEADER -->
 
-<div class="backdrop is-hidden" data-modal-product1>
-  <div class="modal-products">
-    <button class="modal__close-btn" data-modal-product1-close>
-      <svg class="modal__icon" width="18" height="18">
-        <use href="./images/sprite.svg#icon-close-black"></use>
-      </svg>
-    </button>
-    <div class="products__wrapper">
-      <h3 class="modal__products-title">ice cream</h3>
+<div id="h" class="h"></div>
+<div id="popup1" class="popup">
+  <a href="#h" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content popup__content--product1">
+      <a href="#h" class="modal__close-btn">
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </a>
+      <h3 class="popup__title">jogurt</h3>
+      <picture>
+        <source
+          srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
+          media="(min-width: 1200px)"
+        />
+        v
+        <source
+          srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
+          src="./images/tablet/jug-tablet-x1.png"
+          alt="jogurt"
+          class="popup__img"
+        />
+      </picture>
+      <div class="popup__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <p>
+          INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+      </div>
+      <button type="button" class="btn form__btn form__btn--light" data-modal-open>Buy now</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal window - PRODUCT2 - ICE CREAM -->
+
+<div id="popup2" class="popup">
+  <a href="#h" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content popup__content--product2">
+      <a href="#h" class="modal__close-btn">
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </a>
+      <h3 class="popup__title">ice cream</h3>
       <picture>
         <source
           srcset="
@@ -101,33 +147,36 @@
           "
           src="./images/mobile/ice-cream-mobile-x1.png"
           alt="ice-cream"
-          class="modal__products_img"
+          class="popup__img"
         />
       </picture>
-      <p class="modal__products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
-      </p>
-      <p class="modal__products-text">
-        INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et. dolore magna aliqua facilisis.
-      </p>
-      <button type="button" class="btn btn--light form__btn" data-modal-open>Buy now</button>
+      <div class="popup__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <p>
+          INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+      </div>
+      <button type="button" class="btn form__btn form__btn--light" data-modal-open>Buy now</button>
     </div>
   </div>
 </div>
 
-<!-- Modal window - PRODUCT2 -->
+<!-- Modal window - PRODUCT3 - ICE COFFEE -->
 
-<div class="backdrop is-hidden" data-modal-product2>
-  <div class="modal-products modal-products--second">
-    <button class="modal__close-btn" data-modal-product2-close>
-      <svg class="modal__icon" width="18" height="18">
-        <use href="./images/sprite.svg#icon-close-black"></use>
-      </svg>
-    </button>
-    <div class="products__wrapper">
-      <h3 class="modal__products-title">ice coffee</h3>
+<div id="popup3" class="popup">
+  <a href="#h" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content popup__content--product3">
+      <a href="#h" class="modal__close-btn">
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </a>
+      <h3 class="popup__title">ice coffee</h3>
       <picture>
         <source
           srcset="
@@ -150,33 +199,36 @@
           "
           src="./images/mobile/ice-coffee-mobile-x1.png"
           alt="ice-coffee"
-          class="modal__products_img"
+          class="popup__img"
         />
       </picture>
-      <p class="modal__products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
-      </p>
-      <p class="modal__products-text">
-        INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et. dolore magna aliqua facilisis.
-      </p>
-      <button type="button" class="btn btn--light form__btn" data-modal-open>Buy now</button>
+      <div class="popup__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <p>
+          INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+      </div>
+      <button type="button" class="btn form__btn form__btn--light" data-modal-open>Buy now</button>
     </div>
   </div>
 </div>
 
-<!-- Modal window - PRODUCT3 -->
+<!-- Modal window - PRODUCT4 - MILKSHAKES -->
 
-<div class="backdrop is-hidden" data-modal-product3>
-  <div class="modal-products modal-products--third">
-    <button class="modal__close-btn" data-modal-product3-close>
-      <svg class="modal__icon" width="18" height="18">
-        <use href="./images/sprite.svg#icon-close-black"></use>
-      </svg>
-    </button>
-    <div class="products__wrapper">
-      <h3 class="modal__products-title">milkshakes</h3>
+<div id="popup4" class="popup">
+  <a href="#h" class="popup__area"></a>
+  <div class="popup__body">
+    <div class="popup__content popup__content--product4">
+      <a href="#h" class="modal__close-btn">
+        <svg class="modal__icon" width="18" height="18">
+          <use href="./images/sprite.svg#icon-close-black"></use>
+        </svg>
+      </a>
+      <h3 class="popup__title">milkshakes</h3>
       <picture>
         <source
           srcset="
@@ -199,18 +251,20 @@
           "
           src="./images/mobile/milkshakes-mobile-x1.png"
           alt="milkshakes"
-          class="modal__products_img"
+          class="popup__img"
         />
       </picture>
-      <p class="modal__products-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et. dolore magna aliqua facilisis.
-      </p>
-      <p class="modal__products-text">
-        INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-        incididunt ut labore et. dolore magna aliqua facilisis.
-      </p>
-      <button type="button" class="btn btn--light form__btn" data-modal-open>Buy now</button>
+      <div class="popup__text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <p>
+          INGREDIENTS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et. dolore magna aliqua facilisis.
+        </p>
+      </div>
+      <button type="button" class="btn form__btn form__btn--light" data-modal-open>Buy now</button>
     </div>
   </div>
 </div>
