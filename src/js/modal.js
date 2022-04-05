@@ -5,8 +5,8 @@
     modal: document.querySelector("[data-modal]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
@@ -20,28 +20,28 @@
     modal: document.querySelector("[data-modal-product1]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();
 
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector("[data-modal-product2-open]"),
-    closeModalBtn: document.querySelector("[data-modal-product2-close]"),
-    modal: document.querySelector("[data-modal-product2]"),
-  };
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector("[data-modal-product2-open]"),
+//     closeModalBtn: document.querySelector("[data-modal-product2-close]"),
+//     modal: document.querySelector("[data-modal-product2]"),
+//   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
-})();
+//   function toggleModal() {
+//     refs.modal.classList.toggle("is-hidden");
+//   }
+// })();
 
 (() => {
   const refs = {
@@ -50,8 +50,8 @@
     modal: document.querySelector("[data-modal-product3]"),
   };
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+//   refs.openModalBtn.addEventListener("click", toggleModal);
+//   refs.closeModalBtn.addEventListener("click", toggleModal);
 
   function toggleModal() {
     refs.modal.classList.toggle("is-hidden");
