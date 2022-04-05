@@ -2,6 +2,7 @@
     background-color: var(--color-accent-light);
     height: 502px;
     position: relative;
+    overflow-x: hidden;
 
     @include tab {
         height: 416px;
@@ -17,8 +18,8 @@
 
 .header {
     padding-top: 8px;
-    // z-index: 10;
-    // position: relative;
+    z-index: 10;
+    position: relative;
 
     @include tab {
         padding-top: 32px;
@@ -72,6 +73,11 @@
     border: none;
     color: #fff;
     
+    @include desk {
+    height: 26px;
+    width: 26px;
+    }
+
 }
 
 .btn-wrap {
@@ -106,16 +112,9 @@ display: none;
 
 // HERO************
 
-.hero {
-    // position: relative;
-    
-    @include tab {
-        height: 416px;
-    }
-
-    @include desk {
-        height: 665px;
-    }
+.hero-sections {
+    display: flex;
+    justify-content: space-between;
 }
 
 .hero__wrap {
@@ -136,16 +135,34 @@ display: none;
 .hero__title {
     font-family: var(--font-accent);
     font-size: 26px;
+    font-weight: 400;
     color: #fff;
     line-height: calc(30px / 26px);
     text-transform: uppercase;
     letter-spacing: 0.04em;
     margin-bottom: 20px;
+
+    @include tab {
+        font-size: 22px;
+    }
+
+    @include desk {
+        font-size: 38px;
+    }
 }
 
 .hero__title--dark-part {
     color: var(--color-accent);
     font-size: 48px;
+    font-weight: 400;
+
+    @include tab {
+        font-size: 34px;
+    }
+
+    @include desk {
+        font-size: 58px;
+    }
 }
 
 .hero__btn-wrap {
@@ -154,10 +171,54 @@ display: none;
 
 .hero__btn {
     margin-right: 8px;
-//     height: 24px;
-
 }
 
+.hero__btn-list {
+    display: flex;
+}
+
+.hero__btn-item {
+    margin-right: 8px;
+}
+
+.hero__btn-link {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+font-size: 8px;
+line-height: 1.25;
+border-radius: 20px;
+
+@include desk {
+    font-size: 14px;
+}
+}
+
+.hero__btn-link--dark {
+height: 24px;
+width: 62px;
+color: #fff;
+background-color: var(--color-accent);
+
+@include desk {
+    width: 107px;
+    height: 40px;
+}
+}
+
+.hero__btn-link--light {
+    height: 24px;
+    width: 82px;
+    background-color: #fff;
+    color: var(--color-accent);
+
+    @include desk {
+        width: 138px;
+        height: 40px;
+    }
+}
 
 .hero__img--left {
  @media screen and (max-width:767px) {
@@ -169,6 +230,13 @@ display: none;
         position: absolute;
         top: 246px;
     }
+
+    @include desk {
+        width: 213px;
+        height: 216px;
+        left: 16px;
+        top: 388px;
+    }
 }
 
 .hero__modal {
@@ -178,7 +246,12 @@ display: none;
             padding-left: 150px;
         }
         
+        @include desk {
+            margin-top: 108px;
+            padding-left: 229px;
+            }
 }
+
 
 .hero__modal-text {
     width: 114px;
@@ -186,21 +259,28 @@ display: none;
     line-height: 150%;
     color: #FFFFFF;
     margin-bottom: 7px;
+    margin-top: 58px;
+
+    @include desk {
+        width: 200px;
+        font-size: 14px;
+            
+}
 }
 
 .hero__list {
     display: none;
+
     @include tab {
-        display: block;
-    //     position: absolute;
-    //     top: 93px;
-    //     right: 13px ;
+        display: flex;
+        flex-direction: column;
+   
      }
 }
 
 .hero__item {
     font-size: 8px;
-    // сolor: #fff;
+   
 }
 
 .hero__item-numbers {
@@ -212,6 +292,12 @@ display: none;
     text-align: right;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    position: relative;
+    z-index: 2;
+    
+    @include desk {
+    font-size: 46px;
+    }
 }
 
 
@@ -220,9 +306,6 @@ display: none;
     position: absolute;
     top: 83px;
     left: 36px;
-    // width: 346px;
-    // height: 419px;
-    // overflow: hidden;
 
     @media screen and (min-width: 414px) and (max-width: 767px) {
         left: 50%;
@@ -232,7 +315,11 @@ display: none;
     @include tab {
         top: 43px;
         left: 248px;
-        
+    }
+
+    @include desk {
+        top: 54px;
+        left: 517px;
     }
 }
 
@@ -262,17 +349,18 @@ display: none;
     @include tab {
         top: 37px;
         left: 74px;
+        height: 336px;
+    }
+
+    @include desk {
+        height: 557px;
+        top: 57px;
+        left: 119px;
     }
 }
 
-.hero-right {
+.hero__right {
     display: flex;
-    flex-direction: column;
-    
- position: absolute;
- top: 92px;
- right: 32px;
-
 }
 
 .hero__img--right {
@@ -280,11 +368,39 @@ display: none;
 
     @include tab {
         display: block;
-        // position: absolute;
+        position: absolute;
+        bottom: 0;
+        right: 32px;
         width: 190px;
         height: 150px;
-    //     left: 546px;
-    //     top: 265px;
+    }
+
+    @include desk {
+        width: 304px;
+        height: 241px;
     }
 }
 
+.hero__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.hero__item-text {
+    color: #fff;
+    font-size: 8px;
+}
+.hero__item-text--cafe {
+    padding-left: 35%;
+}
+
+.hero__item-numbers::before {
+        content: "";
+        position: absolute;
+        left: 32px;
+        top: -4px;
+        z-index: -1;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #fff;
+}
