@@ -34,172 +34,170 @@
 // Общие стили для кнопок
 //
 :root {
-    --btn-color-light: #FFFFFF;
-    --btn-color-dark: #D41443;
-    --btn-color-light-accent: #ECEBEB;
-    --btn-color-dark-accent: #C7133E;
+  --btn-color-light: #ffffff;
+  --btn-color-dark: #d41443;
+  --btn-color-light-accent: #ecebeb;
+  --btn-color-dark-accent: #c7133e;
 }
-    
+
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    font-family: var(--font-base);
-    font-style: normal;
-    
-    text-align: center;
-    border-radius: 22px;
-    border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: var(--font-base);
+  font-style: normal;
+
+  text-align: center;
+  border-radius: 22px;
+  border: none;
 }
-    
+
 .btn--dark {
-    color: var(--btn-color-light);
-    background-color: var(--btn-color-dark);
-    
-    &:hover,
-    &:focus {
+  color: var(--btn-color-light);
+  background-color: var(--btn-color-dark);
+
+  &:hover,
+  &:focus {
     background-color: var(--btn-color-dark-accent);
-}
-    
-.btn--light {
+  }
+
+  .btn--light {
     color: var(--btn-color-dark);
     background-color: var(--btn-color-light);
-    
+
     &:hover,
     &:focus {
-    background-color: var(--btn-color-light-accent);
+      background-color: var(--btn-color-light-accent);
     }
-}
-    
-    // Кнопки секции HERO
-    
-.hero__btn {
+  }
+
+  // Кнопки секции HERO
+
+  .hero__btn {
     height: 24px;
-    
+
     font-weight: 400;
     font-size: 8px;
     line-height: 1.25;
-    
-    @include desk {
-    height: 40px;
-    
-    font-size: 14px;
-    line-height: 1.3;
-    }
-}
-    
-.hero__btn--dark {
-    width: 62px;
-    
-    @include desk {
-    width: 107px;
-    }
-}
-    
-.hero__btn--light {
-    width: 83px;
-    
-    @include desk {
-    width: 138px;
-    }
-}
-    
-    // Кнопки секции CONTACTS
-    
-.contacts__btn {
-    height: 44px;
-    
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-}
-    
-.contacts__btn--dark {
-    width: 161px;
-    
-    @include tab {
-    width: 192px;
-    }
-    
-    @include desk {
-    width: 198px;
-    }
-}
-    
-.contacts__btn--light {
-    width: 161px;
-    
-    @include tab {
-    width: 174px;
-    }
-    
-    @include desk {
-    width: 180px;
-    }
-}
-    
-.contacts__btn-icon {
-    width: 4px;
-    height: 8px;
-    
-    fill: currentColor;
-}
-    
-.contacts__btn-icon--dark {
-    margin-left: 11px;
-    
-    @include tab {
-    margin-left: 14px;
-    }
-}
-    
-.contacts__btn-icon--light {
-    margin-left: 15px;
-    
-    @include tab {
-    margin-left: 14px;
-    }
-}
-    
-    // Кнопки секции HEADER, MOBILEMENU
-    
-.header__btn,
-.menu__btn {
-     height: 44px;
-    
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-}
-    
-.header__btn {
-    width: 160px;
-}
-    
-.header__btn-icon {
-    width: 4px;
-    height: 8px;
-    fill: currentColor;
-}
-    
-.menu__btn {
-    width: 209px;
-    
-    @include tab {
-    width: 186px;
-    }
-}
-    
-.menu__btn-icon {
-    margin-left: 16px;
-    
-    @include tab {
-    margin-left: 14px;
-    }
-    
-    fill: currentColor;
-}
-}
-    
 
+    @include desk {
+      height: 40px;
+
+      font-size: 14px;
+      line-height: 1.3;
+    }
+  }
+
+  .hero__btn--dark {
+    width: 62px;
+
+    @include desk {
+      width: 107px;
+    }
+  }
+
+  .hero__btn--light {
+    width: 83px;
+
+    @include desk {
+      width: 138px;
+    }
+  }
+
+  // Кнопки секции CONTACTS
+
+  // .contacts__btn {
+  //     height: 44px;
+
+  //     font-weight: 700;
+  //     font-size: 16px;
+  //     line-height: 1.3;
+  // }
+
+  // .contacts__btn--dark {
+  //     width: 161px;
+
+  //     @include tab {
+  //     width: 192px;
+  //     }
+
+  //     @include desk {
+  //     width: 198px;
+  //     }
+  // }
+
+  // .contacts__btn--light {
+  //     width: 161px;
+
+  //     @include tab {
+  //     width: 174px;
+  //     }
+
+  //     @include desk {
+  //     width: 180px;
+  //     }
+  // }
+
+  // .contacts__btn-icon {
+  //     width: 4px;
+  //     height: 8px;
+
+  //     fill: currentColor;
+  // }
+
+  // .contacts__btn-icon--dark {
+  //     margin-left: 11px;
+
+  //     @include tab {
+  //     margin-left: 14px;
+  //     }
+  // }
+
+  // .contacts__btn-icon--light {
+  //     margin-left: 15px;
+
+  //     @include tab {
+  //     margin-left: 14px;
+  //     }
+  // }
+
+  // Кнопки секции HEADER, MOBILEMENU
+
+  .header__btn,
+  .menu__btn {
+    height: 44px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .header__btn {
+    width: 160px;
+  }
+
+  .header__btn-icon {
+    width: 4px;
+    height: 8px;
+    fill: currentColor;
+  }
+
+  .menu__btn {
+    width: 209px;
+
+    @include tab {
+      width: 186px;
+    }
+  }
+
+  .menu__btn-icon {
+    margin-left: 16px;
+
+    @include tab {
+      margin-left: 14px;
+    }
+
+    fill: currentColor;
+  }
+}
