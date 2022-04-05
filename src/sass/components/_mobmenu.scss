@@ -1,43 +1,46 @@
 .mobile-menu {
     position: fixed;
-    background-color: var(--color-bg-modal);
-    width: 250px;
-    height: 100vh;
+    z-index: 50;
     top: 0;
     right: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    z-index: 8;
-    transition: all 500ms;
 
+    width: 250px;
     @include tab {
         width: 254px;
     }
-
     @include desk {
         display: none;
     }
+    height: 100vh;
+    padding-top: 60px;
+
+    filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+    background-color: var(--color-bg-modal);
+
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(0);
+    transition: transform 500ms,  opacity 500ms, visibility 500ms;
+
+    &.is-hidden {
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateX(100%);
+    }
 }
 
-.mobile-menu.is-hidden {
-    right: -100%;
-}
 
 .menu-close__btn {
-    display: block;
-    position: relative;
-    width: 14px;
-    height: 14px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     padding: 0;
-    margin-bottom: 26px;
-    margin-left: auto;
-    margin-right: 20px;
-    align-items: center;
     border: none;
-    background-color: var(--color-bg-modal);
+    background-color: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
     &:hover, :focus {
-        fill: var(--color-accent); 
+        color: var(--color-accent); 
     } 
 
     @include tab {
@@ -45,7 +48,11 @@
     }
 }
 
-
+.menu-close__icon {
+    width: 14px;
+    height: 14px;
+    fill: currentColor
+}
 
 .header__btn {
     display: flex;
