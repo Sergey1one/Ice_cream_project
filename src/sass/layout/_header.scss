@@ -85,7 +85,11 @@
     height: 26px;
     width: 26px;
     }
-
+&:hover, &:focus {
+    background-color: var(--color-accent-dark);
+    fill: #fff;
+    color: #fff;
+}
 }
 
 .btn-wrap {
@@ -99,8 +103,7 @@
    border: transparent;
 
     @include tab {
-        // на табе маржин райт как и должно быть 32 
-        // margin-right: 32px;
+        margin-right: 32px;
         
     }
 
@@ -114,7 +117,7 @@ display: none;
 
     @include tab {
         display: block;
-        width: 160px;
+        // width: 160px;
     }
 }
 
@@ -241,6 +244,24 @@ background-color: var(--color-accent);
 }
 
 .hero__img--left {
+    // animation-name: move;
+    // animation-duration: 3s;
+    // animation-timing-function: linear;
+    // // animation-iteration-count: infinite;
+    
+    
+    // @keyframes move {
+    //     0% {
+    //         transform: translatex(0);
+    //     }
+    
+    //     100% {
+    // transform: translatex(420px);
+            
+    //     }
+    // }
+
+
  @media screen and (max-width:767px) {
         display: none;
     }
@@ -256,8 +277,14 @@ background-color: var(--color-accent);
     @include desk {
         width: 213px;
         height: 216px;
-        // left: 16px;
         top: 388px;
+    }
+
+    &:hover, &:focus {
+        background-color: var(--color-accent-dark);
+        border-radius: 50%;
+        transition: background-color 500ms linear,
+        transform 500ms ease-in-out;
     }
 }
 
@@ -314,7 +341,7 @@ display: none;
     font-family: var(--font-accent);
     color: var(--color-accent);
     font-size: 28px;
-    line-height: calc (32px / 28px);
+    line-height: 1.14;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     position: relative;
@@ -406,6 +433,23 @@ display: none;
 
 .hero__img--right {
     display: none;
+
+    animation-name: move;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    // animation-iteration-count: infinite;
+    
+    
+    @keyframes move {
+        0% {
+            transform: translatex(420px);
+        }
+    
+        100% {
+    
+            transform: translatex(0);
+        }
+    }
 
     @include tab {
         display: block;
