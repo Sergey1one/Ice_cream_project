@@ -1,0 +1,125 @@
+.advantages__section {
+    background-color: var(--color-bg-light);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.advantages__title {
+    @include setFont(36px, 41px, 400, 0.04em);
+    font-family: 'Titan One';
+    color: var(--color-accent);
+    margin-bottom: 6px;
+
+    @include tab {
+        @include setFont(48px, 55px, 400, 0.04em);
+        margin-bottom: 13px;
+    }
+
+    @include desk {
+        @include setFont(58px, 66px, 400, 0.04em);
+        margin-bottom: 16px;
+    }
+}
+
+
+.advantages__text {
+    @include setFont(12px, 20px, 700, 0.02em);
+    font-family: 'DM Sans';
+    color: black;
+
+    @include tab {
+        @include setFont(14px, 24px, 700, 0.02em);
+    }
+
+    @include desk {
+        @include setFont(16px, 28px, 700, 0.02em);
+        width: 288px;
+    }
+}
+
+.advantages {
+    @include tab {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -8px;
+    }
+
+    @include desk {
+        margin: -16px;
+    }
+}
+
+.advantages__item {
+    width: 230px;
+    
+    @media screen and (max-width: 767px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    
+    @include tab {
+        margin: 8px;
+        flex-basis: calc((100% - 64px) / 4);
+    }
+
+    @include desk {
+        margin: 16px;
+        flex-basis: calc((100% - 96px) / 3);
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        margin-bottom: 16px;
+        height: 50px;
+        
+        @include tab {
+            margin-bottom: 36px;
+        }
+        
+        @include desk {
+            margin-bottom: 40px;
+        }
+    }
+
+    &:nth-child(1)::before {
+        background-repeat: no-repeat;
+        background-size: 33px 50px;
+        background-image: url('../images/icon1-x1.png');
+        
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon1-x2.png');
+        }
+    }
+
+    &:nth-child(2)::before {
+        background-repeat: no-repeat;
+        background-size: 50px 50px;
+        background-image: url('../images/icon2-x1.png');
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon2-x2.png');
+        }
+    }
+
+    &:nth-child(3)::before {
+        background-repeat: no-repeat;
+        background-size: 44px 50px;
+        background-image: url('../images/icon3-x1.png');
+        
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/icon3-x2.png');
+        }
+    }
+}
