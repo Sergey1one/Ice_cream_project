@@ -140,7 +140,7 @@
    display: flex;
    margin-top: 20px;
    color: var(--color-accent-dark);
-   font-size: 12px;
+   font-size: 10px;
    line-height: 1.4;
    letter-spacing: 0.03em;
    font-weight: 400;
@@ -149,12 +149,9 @@
       font-weight: 700;
       text-decoration: underline;
    }
-   @media screen and (min-width: 1280px) {
+   @include tab {
       align-items: start;
-      font-size: 14px;
-      line-height: 1.71;
-      letter-spacing: 0.03em;
-      font-weight: 400;
+      font-size: 12px;
    }
 }
 
@@ -195,27 +192,6 @@
    .form__input:focus+& {
       fill: var(--color-accent);
    }
-}
-
-.form__btn {
-   color: var(--btn-color-dark);
-   background-color: var(--btn-color-light);
-   &:hover,
-   &:focus {
-   background-color: var(--btn-color-dark);
-   color: var(--btn-color-light);
-   }
-   display: block;
-   margin-top: 30px;
-   margin-left: auto;
-   margin-right: auto;
-   font-size: 16px;
-   line-height: 1.31;
-   font-weight: 700;
-   height: 44px;
-   min-width: 130px;
-   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__buttons {
