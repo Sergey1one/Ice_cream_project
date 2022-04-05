@@ -35,6 +35,8 @@
   
     <section class="hero">
       <div class="container">
+        <div class="hero-sections">
+          <!-- hero left section heading modal text -->
       <div class="hero__wrap">
         <h1 class="hero__title">
           ice cream<br />
@@ -42,21 +44,12 @@
         </h1>
 
         <div class="hero__btn-wrap">
-          <button
-            class="btn btn--dark hero__btn hero__btn--dark"
-            type="submit"
-            onClick="location.href='#products'"
-          >
-            Products
-          </button>
-          <button
-            class="btn btn--light hero__btn hero__btn--light"
-            type="submit"
-            onClick="location.href='#about'"
-          >
-            How it's made?
-          </button>
+          <ul class="hero__btn-list">
+            <li class="hero__btn-item"><a class="hero__btn-link hero__btn-link--dark" href="#products">Products</a></li>
+            <li class="hero__btn-item"><a class="hero__btn-link hero__btn-link--light" href="#about">How it's made?</a></li>
+          </ul>
         </div>
+        
         <div class="hero__modal">
           <p class="hero__modal-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -68,24 +61,33 @@
             </svg>
           </button>
         </div>
-      </div>
-      <div class="hero__img--left">
-        <picture class="hero__modal-img">
-          <source
-            srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
-            media="(min-width: 1200px)"
-          />
-          <source
-            srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
-            media="(min-width: 768px)"
-          />
-          <img src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
-        </picture>
-      </div>
+        </div>
+      
+
+<!-- hero right numbers -->
+        <div class="hero__right">
+        <ul class="hero__list">
+          <li class="hero__item">
+            <p class="hero__item-numbers">16</p>
+            <p class="hero__item-text hero__item-text--cafe">cafes</p>
+          </li>
+          <li class="hero__item">
+            
+            <p class="hero__item-numbers">23</p>
+            <p class="hero__item-text">food trucks</p>
+          </li>
+        </ul>
+        </div>
+        </div>
+
+
+
+<!-- снизу позиционированные элементы  -->
+
 
       <div class="ice-cream__wrap">
         <div class="ice-cream__wrap--ellipse"></div>
-        <picture class="ice-cream__wrap--top-img">
+        <picture>
           <source
             srcset="
               ./images/desktop/hero-desktop-x1.png 1x,
@@ -101,22 +103,26 @@
             srcset="./images/mobile/hero-mobile-x1.png 1x, ./images/mobile/hero-mobile-x2.png 2x"
             media="(max-width: 767px)"
           />
-          <img src="./images/desktop/hero-desktop-x1.png" alt="huge ice cream" />
+          <img class="ice-cream__wrap--top-img" src="./images/desktop/hero-desktop-x1.png" alt="huge ice cream" />
         </picture>
       </div>
-      <div class="hero-right">
-        <ul class="hero__list">
-          <li class="hero__item">
-            <p class="test">
-              <span class="hero__item-numbers">16</span><br />
-              <span class="hero__item-numbers-text">cafes</span>
-            </p>
-          </li>
-          <li class="hero__item">
-            <p class="test"><span class="hero__item-numbers">23</span> food trucks</p>
-          </li>
-        </ul>
-        <picture class="hero__img--right">
+      
+
+<div class="hero__img--left">
+        <picture>
+          <source
+            srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
+            media="(min-width: 768px)"
+          />
+          <img class="hero__modal-img" src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
+        </picture>
+      </div> 
+
+  <picture class="hero__img--right">
           <source
             srcset="
               ./images/desktop/hero-woman-desktop-x1.png 1x,
@@ -133,7 +139,6 @@
           />
           <img src="./images/desktop/hero-woman-desktop-x1.png" alt="girl with ice cream" />
         </picture>
-      </div>
     </section>
   </div>
 </div>
