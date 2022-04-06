@@ -5,16 +5,22 @@
 
     <ul class="products-list">
       <li class="products-list__item">
-        <h3 class="products-list__title">ice cream</h3>
-        <p class="products-list__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et. dolore magna aliqua facilisis.
-        </p>
-        <a href="#popup2" class="products-list__btn product-open-btn">
-          <svg class="product-open-btn__icon" width="20" height="12">
-            <use href="./images/sprite.svg#icon-arrow-to-right"></use>
-          </svg>
-        </a>
+        <div class="wraper">
+          <h3 class="products-list__title">ice cream</h3>
+          <p class="products-list__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et. dolore magna aliqua facilisis.
+          </p>
+          <button
+            class="products-list__btn product-open-btn"
+            type="button"
+            data-modal-product2-open
+          >
+            <svg class="product-open-btn__icon" width="20" height="12">
+              <use href="./images/sprite.svg#icon-arrow-to-right"></use>
+            </svg>
+          </button>
+        </div>
       </li>
       <li class="products-list__item">
         <h3 class="products-list__title">ice coffee</h3>
@@ -22,11 +28,11 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <a href="#popup3" class="products-list__btn product-open-btn">
+        <button class="products-list__btn product-open-btn" type="button" data-modal-product3-open>
           <svg class="product-open-btn__icon" width="12" height="12">
             <use href="./images/sprite.svg#icon-arrow-to-right"></use>
           </svg>
-        </a>
+        </button>
       </li>
       <li class="products-list__item">
         <h3 class="products-list__title">milkshakes</h3>
@@ -34,11 +40,11 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et. dolore magna aliqua facilisis.
         </p>
-        <a href="#popup4" class="products-list__btn product-open-btn">
+        <button class="products-list__btn product-open-btn" type="button" data-modal-product4-open>
           <svg class="product-open-btn__icon" width="12" height="12">
             <use href="./images/sprite.svg#icon-arrow-to-right"></use>
           </svg>
-        </a>
+        </button>
       </li>
     </ul>
   </div>
