@@ -5,7 +5,11 @@
   z-index: 0;
 }
 
-.section__title-wrap {
+.product__subtitle {
+  text-align: center;
+}
+
+.product__title {
   margin-bottom: 8px;
   text-align: center;
 
@@ -19,36 +23,64 @@
 }
 
 .products-list {
+  margin-top: 140px;
+
   @include tab {
     display: flex;
     margin: -8px;
+    margin-top: 138px;
   }
 
   @include desk {
     margin: -16px;
+    margin-top: 261px;
   }
 }
 
 .products-list__item {
   position: relative;
-  padding: 300px 40px 40px 40px;
+  padding: 160px 40px 40px 40px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 280px;
+
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 140px;
+    }
+  }
 
   @include tab {
-    padding: 256px 32px 40px 32px;
+    padding: 118px 32px 40px 32px;
     margin: 8px;
+    width: auto;
     flex-basis: calc((100% - 16px * 3) / 3);
   }
 
   @include desk {
-    padding: 426px 75px 60px 75px;
+    padding: 165px 75px 60px 75px;
     margin: 16px;
     flex-basis: calc((100% - 32px * 3) / 3);
+  }
+
+  &:first-child {
+    background-color: #ffb8ca;
+  }
+
+  &:nth-child(2) {
+    background-color: #f0d1a5;
+  }
+
+  &:last-child {
+    background-color: #c2e297;
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -140px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -56,11 +88,13 @@
     height: 280px;
 
     @include tab {
+      top: -138px;
       width: 224px;
       height: 224px;
     }
 
     @include desk {
+      top: -261px;
       width: 394px;
       height: 394px;
     }
@@ -163,39 +197,6 @@
         background-image: url(../images/desktop/milkshakes-desktop-x2.png);
       }
     }
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-
-    display: block;
-    width: 100%;
-    height: calc(100% - 140px);
-    border-radius: 24px;
-
-    @include tab {
-      height: calc(100% - 138px);
-    }
-
-    @include desk {
-      height: calc(100% - 261px);
-    }
-  }
-
-  &:first-child::after {
-    background-color: #ffb8ca;
-  }
-
-  &:nth-child(2)::after {
-    background-color: #f0d1a5;
-  }
-
-  &:last-child::after {
-    background-color: #c2e297;
   }
 }
 
