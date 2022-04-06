@@ -13,7 +13,7 @@
           </ul>
         </nav>
         <div class="btn-wrap">
-          <button class="btn menu__btn menu-btn" type="button">
+          <button class="btn menu-btn" type="button">
             <svg class="menu-btn__icon" width="20" height="12">
               <use
                 class="header__btn-icon header__btn-icon--dark"
@@ -22,20 +22,20 @@
             </svg>
           </button>
 
-          <button type="button" class="btn header__btn" data-modal-open>
+          <button type="button" class="btn header__btn btn--light" data-modal-open>
             Buy now
-            <svg class="header__btn-icon" width="8" height="10">
-              <use href="./images/sprite.svg#icon-arrow1"></use>
+            <svg class="header__btn-icon header__btn-icon--margin" width="8" height="10">
+              <use href="./images/sprite.svg#icon-arrow"></use>
             </svg>
           </button>
         </div>
       </div>
     </div>
-    <!-- <include src="./partials/mobmenu.html"></include> -->
+    <include src="./partials/mobmenu.html"></include>
   </header>
   
     <section class="hero">
-      <div class="container">
+      <div class="container hero-container">
         <div class="hero-sections">
           <!-- hero left section heading modal text -->
       <div class="hero__wrap">
@@ -79,11 +79,7 @@
           </li>
         </ul>
         </div>
-        </div>
-
-<!-- снизу позиционированные элементы  -->
-
-      <div class="ice-cream__wrap">
+        <div class="ice-cream__wrap">
         <div class="ice-cream__wrap--ellipse"></div>
         <picture>
           <source
@@ -107,7 +103,7 @@
       
 
 <div class="hero__img--left">
-        <picture>
+        <picture class="hero__modal-img">
           <source
             srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
             media="(min-width: 1200px)"
@@ -116,7 +112,7 @@
             srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
             media="(min-width: 768px)"
           />
-          <img class="hero__modal-img" src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
+          <img src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
         </picture>
       </div> 
 
@@ -137,6 +133,11 @@
           />
           <img src="./images/desktop/hero-woman-desktop-x1.png" alt="girl with ice cream" />
         </picture>
+        </div>
+
+
+
+      
     </section>
   </div>
 </div>
