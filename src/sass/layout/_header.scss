@@ -72,6 +72,10 @@
     }
 }
 
+.menu-btn__icon {
+    // fill: currentColor;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -87,6 +91,7 @@
     border-radius: 50%;
     border: none;
     background-color: #fff;
+    fill: var(--color-accent);
     
     @include desk {
     height: 26px;
@@ -122,6 +127,10 @@ display: none;
         display: block;
         
     }
+}
+
+.header__btn-icon {
+    fill: var(--color-accent);
 }
 
 .header__btn-icon--margin {
