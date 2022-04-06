@@ -31,7 +31,10 @@
    padding: 20px 40px;
    background-color: var(--color-bg-modal);
    transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-   .backdrop.is-hidden & {
+   .backdrop.is-hidden .modal {
+      transform: rotate(-300deg) scale(0.5);
+   }
+   .backdrop .modal {
       transform: rotate(-300deg) scale(0.5);
    }
    border-radius: 20px;
@@ -46,6 +49,7 @@
    border: none;
    cursor: pointer;
    position: absolute;
+   z-index: -1;
    top: 8px;
    right: 8px;
    width: 30px;
