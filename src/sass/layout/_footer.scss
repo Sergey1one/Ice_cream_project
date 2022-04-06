@@ -1,19 +1,22 @@
 .footer {
-    padding-top: 50px;
     padding-bottom: 25px;
+
     background-color: var(--color-bg-light);
+    
     @include tab {
-        padding-bottom: 18px;
+        padding-bottom: 8px;
     }
     
     @include desk {
-        padding-bottom: 10px;
+        padding-top: 60px;
+        padding-bottom: 7px;
     }
 }
 
 
 .footer-wrap {
     margin-bottom: 43px;
+
     @include tab {
         margin-bottom: 0;
     }
