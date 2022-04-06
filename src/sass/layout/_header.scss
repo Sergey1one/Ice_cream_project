@@ -69,7 +69,12 @@
 .header-btn__list {
     @include tab {
         display: flex;
+        align-items: center;
     }
+}
+
+.menu-btn__icon {
+    // fill: currentColor;
 }
 
 .header-container {
@@ -87,6 +92,7 @@
     border-radius: 50%;
     border: none;
     background-color: #fff;
+    fill: var(--color-accent);
     
     @include desk {
     height: 26px;
@@ -122,6 +128,10 @@ display: none;
         display: block;
         
     }
+}
+
+.header__btn-icon {
+    fill: var(--color-accent);
 }
 
 .header__btn-icon--margin {
