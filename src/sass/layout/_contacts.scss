@@ -3,7 +3,12 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  letter-spacing: 0.04em;
+}
+.contacts {
+  background: linear-gradient(to bottom, #ffffff 23%, var(--color-bg-light) 23%);
+  @include tab {
+    background: linear-gradient(to bottom, #ffffff 20%, var(--color-bg-light) 20%);
+  }
 }
 
 .contacts-list {
@@ -18,6 +23,9 @@
 }
 
 .contacts-list__item {
+  background-color: #fff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
   @include smartphone {
     width: 100%;
   }
@@ -25,8 +33,7 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+
   @include tab {
     &:not(:last-child) {
       margin-bottom: 0;
@@ -44,6 +51,7 @@
   justify-content: center;
   margin-bottom: 20px;
   @extend %mobile-font;
+  letter-spacing: 0.04em;
   color: #fff;
   width: 80px;
   height: 16px;
@@ -70,6 +78,7 @@
 
 .contacts__place {
   @extend %mobile-font;
+  letter-spacing: 0.04em;
   margin-bottom: 8px;
   @include tab {
     font-size: 14px;
@@ -82,11 +91,11 @@
   max-width: 180px;
   margin-bottom: 48px;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #907e82;
   @include tab {
     font-size: 14px;
     margin-bottom: 64px;
+    line-height: 1.66;
   }
 }
 .schedule-outline {
@@ -124,6 +133,7 @@
   @extend %mobile-font;
   @include tab {
     font-size: 14px;
+    line-height: 1.86;
   }
 }
 
@@ -135,6 +145,7 @@
   }
   @include tab {
     font-size: 14px;
+    line-height: 1.86;
   }
 }
 
@@ -145,21 +156,25 @@
 
 .contact-phone {
   @extend %mobile-font;
+  line-height: 1.5;
   letter-spacing: normal;
   color: #907e82;
   cursor: pointer;
   @include tab {
     font-size: 14px;
+    line-height: 1.83;
   }
 }
 
 .contact-mail {
   @extend %mobile-font;
+  line-height: 1.5;
   letter-spacing: normal;
   color: #907e82;
   cursor: pointer;
   @include tab {
     font-size: 14px;
+    line-height: 1.83;
   }
 }
 
@@ -170,6 +185,14 @@
   @include tab {
     justify-content: center;
     flex-direction: row;
+  }
+}
+
+.btns-wrap-item {
+  margin-bottom: 10px;
+  @include tab {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
