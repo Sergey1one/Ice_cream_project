@@ -20,7 +20,7 @@
 
 .modal {
    margin-right: auto;
-   position: relative;
+   position: absolute;
    overflow: auto;
    top: 50%;
    left: 50%;
@@ -138,6 +138,7 @@
 
 .form__checked {
    display: flex;
+   justify-content: center;
    margin-top: 20px;
    color: var(--color-accent-dark);
    font-size: 10px;
