@@ -12,23 +12,22 @@
             <li class="site-nav__item"> <a class="site-nav__link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div class="btn-wrap">
-          <button class="btn menu-btn" type="button">
+          <ul class="header-btn__list">
+          <li><button class="btn menu-btn" type="button">
             <svg class="menu-btn__icon" width="20" height="12">
               <use
-                class="header__btn-icon header__btn-icon--dark"
+                class="header__btn-icon"
                 href="./images/sprite.svg#icon-burger"
               ></use>
             </svg>
-          </button>
-
-          <button type="button" class="btn header__btn btn--light" data-modal-open>
+          </button></li>
+          <li><button type="button" class="btn header__btn btn--light" data-modal-open>
             Buy now
             <svg class="header__btn-icon header__btn-icon--margin" width="8" height="10">
               <use href="./images/sprite.svg#icon-arrow"></use>
             </svg>
-          </button>
-        </div>
+          </button></li>
+        </ul>
       </div>
     </div>
     <include src="./partials/mobmenu.html"></include>
