@@ -42,11 +42,11 @@
   padding: 160px 40px 40px 40px;
   margin-right: auto;
   margin-left: auto;
-  width: 280px;
 
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
+    max-width: 280px;
     &:not(:last-child) {
       margin-bottom: 140px;
     }
