@@ -64,6 +64,7 @@
 }
 
 .header-btn__list {
+    z-index: 8;
     @include tab {
         display: flex;
         align-items: center;
