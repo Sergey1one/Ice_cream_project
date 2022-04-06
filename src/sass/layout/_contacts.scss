@@ -5,7 +5,10 @@
   line-height: 1.86;
 }
 .contacts {
-  background-color: linear-gradient(to bottom, rgb(255, 255, 255) 42%, var(--color-bg-light));
+  background: linear-gradient(to bottom, #ffffff 23%, var(--color-bg-light) 23%);
+  @include tab {
+    background: linear-gradient(to bottom, #ffffff 20%, var(--color-bg-light) 20%);
+  }
 }
 
 .contacts-list {
@@ -20,6 +23,9 @@
 }
 
 .contacts-list__item {
+  background-color: #fff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
   @include smartphone {
     width: 100%;
   }
@@ -27,8 +33,7 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+
   @include tab {
     &:not(:last-child) {
       margin-bottom: 0;
@@ -180,6 +185,14 @@
   @include tab {
     justify-content: center;
     flex-direction: row;
+  }
+}
+
+.btns-wrap-item {
+  margin-bottom: 10px;
+  @include tab {
+    margin-bottom: 0;
+    margin-right: 10px;
   }
 }
 
