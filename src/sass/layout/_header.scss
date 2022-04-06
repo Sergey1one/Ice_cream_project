@@ -69,6 +69,7 @@
 .header-btn__list {
     @include tab {
         display: flex;
+        align-items: center;
     }
 }
 
