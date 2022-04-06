@@ -3,7 +3,9 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.86;
-  letter-spacing: 0.04em;
+}
+.contacts {
+  background-color: linear-gradient(to bottom, rgb(255, 255, 255) 42%, var(--color-bg-light));
 }
 
 .contacts-list {
@@ -44,6 +46,7 @@
   justify-content: center;
   margin-bottom: 20px;
   @extend %mobile-font;
+  letter-spacing: 0.04em;
   color: #fff;
   width: 80px;
   height: 16px;
@@ -70,6 +73,7 @@
 
 .contacts__place {
   @extend %mobile-font;
+  letter-spacing: 0.04em;
   margin-bottom: 8px;
   @include tab {
     font-size: 14px;
@@ -82,11 +86,11 @@
   max-width: 180px;
   margin-bottom: 48px;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #907e82;
   @include tab {
     font-size: 14px;
     margin-bottom: 64px;
+    line-height: 1.66;
   }
 }
 .schedule-outline {
@@ -124,6 +128,7 @@
   @extend %mobile-font;
   @include tab {
     font-size: 14px;
+    line-height: 1.86;
   }
 }
 
@@ -135,6 +140,7 @@
   }
   @include tab {
     font-size: 14px;
+    line-height: 1.86;
   }
 }
 
@@ -145,21 +151,25 @@
 
 .contact-phone {
   @extend %mobile-font;
+  line-height: 1.5;
   letter-spacing: normal;
   color: #907e82;
   cursor: pointer;
   @include tab {
     font-size: 14px;
+    line-height: 1.83;
   }
 }
 
 .contact-mail {
   @extend %mobile-font;
+  line-height: 1.5;
   letter-spacing: normal;
   color: #907e82;
   cursor: pointer;
   @include tab {
     font-size: 14px;
+    line-height: 1.83;
   }
 }
 
