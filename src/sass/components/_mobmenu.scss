@@ -54,7 +54,7 @@
     fill: currentColor
 }
 
-.header__btn {
+.menu__btn {
     display: flex;
     font-family: var(--font-base);
     font-style: normal;
@@ -88,9 +88,10 @@
     }
 }
 
-.header__btn-icon {
+.menu__btn-icon {
     display: block;
     margin-left: 27px;
+    fill: var(--color-accent);
 
     @include tab {
         margin-left: 21px;
