@@ -66,12 +66,12 @@
     margin-top: 32px;
     @include tab {
         display: flex;
-    margin-right: -32px;
+    // margin-right: -32px;
     margin-top: 40px;
 }
 @include desk {
     margin-top: 80px;
-    margin-right: -139px;
+    // margin-right: -139px;
     align-items: center;
 }
     
