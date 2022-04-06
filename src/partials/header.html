@@ -1,7 +1,5 @@
-<div class="header-hero__common-bgc">
-  <header class="header">
-    <div class="container">
-      <div class="header-container">
+<header class="header">
+    <div class="container header-container">
         <img src="./images/logo-vector.svg" alt="logo" />
         <nav class="site-nav">
           <ul class="site-nav__list">
@@ -13,22 +11,25 @@
           </ul>
         </nav>
           <ul class="header-btn__list">
-          <li><button class="btn menu-btn" type="button">
+          <li>
+            <button class="btn menu-btn" type="button">
             <svg class="menu-btn__icon" width="20" height="12">
               <use
                 class="header__btn-icon"
                 href="./images/sprite.svg#icon-burger"
               ></use>
             </svg>
-          </button></li>
-          <li><button type="button" class="btn header__btn btn--light" data-modal-open>
+          </button>
+        </li>
+          <li>
+            <button type="button" class="btn header__btn btn--light" data-modal-open>
             Buy now
             <svg class="header__btn-icon header__btn-icon--margin" width="8" height="10">
               <use href="./images/sprite.svg#icon-arrow"></use>
             </svg>
-          </button></li>
+          </button>
+        </li>
         </ul>
-      </div>
     </div>
     <include src="./partials/mobmenu.html"></include>
   </header>
@@ -43,13 +44,11 @@
           made with<br /><span class="hero__title--dark-part">passion</span>
         </h1>
 
-        <div class="hero__btn-wrap">
           <ul class="hero__btn-list">
             <li class="hero__btn-item"><a class="hero__btn-link hero__btn-link--dark" href="#products">Products</a></li>
             <li class="hero__btn-item"><a class="hero__btn-link hero__btn-link--light" href="#how-its-made">How it's made?</a></li>
           </ul>
-        </div>
-        
+
         <div class="hero__modal">
           <p class="hero__modal-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -63,30 +62,28 @@
         </div>
         </div>
       
-
 <!-- hero right numbers -->
-        <div class="hero__right">
         <ul class="hero__list">
           <li class="hero__item">
             <p class="hero__item-numbers">16</p>
             <p class="hero__item-text hero__item-text--cafe">cafes</p>
           </li>
           <li class="hero__item">
-            
             <p class="hero__item-numbers">23</p>
             <p class="hero__item-text">food trucks</p>
           </li>
         </ul>
-        </div>
+
         <div class="ice-cream__wrap">
         <div class="ice-cream__wrap--ellipse"></div>
-        <picture>
+        <!-- <div class="ice-cream__wrap-img"> -->
+          <picture class="ice-cream__wrap--top-img" >
           <source
             srcset="
               ./images/desktop/hero-desktop-x1.png 1x,
               ./images/desktop/hero-desktop-x2.png 2x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="./images/tablet/hero-tablet-x1.png 1x, ./images/tablet/hero-tablet-x2.png 2x"
@@ -96,16 +93,17 @@
             srcset="./images/mobile/hero-mobile-x1.png 1x, ./images/mobile/hero-mobile-x2.png 2x"
             media="(max-width: 767px)"
           />
-          <img class="ice-cream__wrap--top-img" src="./images/desktop/hero-desktop-x1.png" alt="huge ice cream" />
-        </picture>
-      </div>
+          <img src="./images/desktop/hero-desktop-x1.png" alt="huge ice cream" />
+        </picture></div>
+        
+      <!-- </div> -->
       
 
-<div class="hero__img--left">
-        <picture class="hero__modal-img">
+<!-- hero pictures for positioning -->
+        <picture class="hero__img--left">
           <source
             srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="./images/tablet/jug-tablet-x1.png 1x, ./images/tablet/jug-tablet-x2.png 2x"
@@ -113,7 +111,7 @@
           />
           <img src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
         </picture>
-      </div> 
+
 
   <picture class="hero__img--right">
           <source
@@ -121,7 +119,7 @@
               ./images/desktop/hero-woman-desktop-x1.png 1x,
               ./images/desktop/hero-woman-desktop-x2.png 2x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
           />
           <source
             srcset="
@@ -133,10 +131,5 @@
           <img src="./images/desktop/hero-woman-desktop-x1.png" alt="girl with ice cream" />
         </picture>
         </div>
-
-
-
-      
     </section>
-  </div>
 </div>
