@@ -10,11 +10,17 @@
    height: 100%;
    background-color: rgba(0, 0, 0, 0.5);
    opacity: 1;
-   transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1);
+   visibility: visible;
+   transition: all 0.5s ease 0s;
    &.is-hidden {
       opacity: 0;
       pointer-events: none;
       visibility: hidden;
+      transition: all 0.5s ease 0s;
+   }
+   &.is-hidden .modal3{
+      transform: rotate(-300deg) scale(0.5);
+      transition: all 0.5s ease 0s;
    }
    @include tab {
         padding: 15px;
@@ -30,15 +36,12 @@
    position: absolute;
    top: 50%;
    left: 50%;
-   transform: translate(-50%, -50%) scale(1);
+   transform: translate(-50%, -50%) rotate(0) scale(1);
    max-width: 1200px;
    max-height: auto;
    padding: 50px 5px 5px;
    background-color: var(--color-accent-medium);
-   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
-   .backdrop.is-hidden & {
-      transform: rotate(-300deg) scale(0.5);
-   }
+   transition: all 0.8s ease 0s;
    border-radius: 20px;
    @include tab {
       padding: 50px 10px 10px;
