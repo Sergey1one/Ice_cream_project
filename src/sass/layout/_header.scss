@@ -111,13 +111,25 @@ background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include desk {
     display: none;
     }
+
+    // &__icon:hover, &__icon:focus {
+    //     fill: #fff;
+    // }
 }
+
+.menu-btn__icon {
+    &:hover, &:focus {
+    fill: #fff;
+    }
+}
+
+
 
 .header__btn {
     display: none;
 
     @include tab {
-        display: block;
+        display: flex;
     }
 }
 
