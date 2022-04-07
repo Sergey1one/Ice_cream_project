@@ -208,7 +208,7 @@
 
 .backdrop-products {
    z-index: 10;
-   padding: 15px;
+   padding: 10px;
    position: fixed;
    top: 0;
    left: 0;
@@ -233,14 +233,13 @@
 .products {
    margin-right: auto;
    position: absolute;
-   overflow: auto;
    text-align: center;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%) rotate(0) scale(1);
-   max-width: 450px;
+   min-width: 300px;
    max-height: 800px;
-   padding: 20px 40px;
+   padding: 20px 20px;
    background-color: #ffb8ca;
    &--orange {
       background-color: #f0d1a5;
@@ -256,13 +255,12 @@
 }
 
 .products__title {
-   font-size: 40px;
+   font-size: 36px;
 	margin: 0px 0px 1em 0px;
 	position: relative;
 	margin-bottom: 15px;
 	font-family: var(--font-accent);
 	font-weight: 400;
-	font-size: 40px;
 	line-height: 1.15;
 	text-align: center;
 	letter-spacing: 0.04em;
