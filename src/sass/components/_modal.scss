@@ -267,11 +267,10 @@
    border-radius: 20px;
    @media screen and (min-width: 480px) {
       min-width: 400px;
-      max-height: 500px;
    }
    @media screen and (min-width: 768px) {
       min-width: 528px;
-      max-height: 600px;
+      max-height: 650px;
    }
 }
 
@@ -324,7 +323,7 @@
 }
 
 .products__img {
-   width: 50%;
+   width: 45%;
 }
 
 .h {
