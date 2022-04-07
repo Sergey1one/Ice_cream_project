@@ -32,6 +32,9 @@
   background-color: #fff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+  &:hover {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.4);
+  }
   @include smartphone {
     width: 100%;
   }
@@ -39,7 +42,6 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
-
   @include tab {
     &:not(:last-child) {
       margin-bottom: 0;
