@@ -25,9 +25,6 @@
    @include tab {
         padding: 15px;
     }
-    @include desk {
-        padding: 15px;
-    }
 }
 
 .modal3 {
@@ -48,56 +45,20 @@
       max-width: 650px;
       max-height: 550px;
     }
-    @include desk {
-      max-width: 850px;
-      max-height: 700px;
-    }
 }
 
 /* Оформление формы */
 
-.modal__close-btn {
-   border: none;
-   cursor: pointer;
-   position: absolute;
-   top: 8px;
-   right: 8px;
-   width: 30px;
-   height: 30px;
-   border-radius: 50%;
-   border: 1px solid #fff;
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   background: transparent;
-}
-
-.modal__icon {
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      fill: #fff;
-      .modal__close-btn:hover &,
-      .modal__close-btn:focus & {
-         fill: var(--color-accent-dark);
-      }
-}
-
 .googlemap-mobile {
    display: block;
-   @media screen and (min-width: 767px) {
+   @media screen and (min-width: 768px) {
       display: none;
    }
 }
 
 .googlemap-tablet {
    display: none;
-   @media screen and (min-width: 768px) and (max-width: 1279px){
+   @media screen and (min-width: 768px) {
         display: block;
     }
-}
-
-.googlemap-desktop {
-   display: none;
-   @media screen and (min-width: 1280px) {
-      display: block;
-   }
 }
