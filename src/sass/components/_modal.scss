@@ -250,8 +250,8 @@
    left: 50%;
    transform: translate(-50%, -50%) rotate(0) scale(1);
    min-width: 300px;
-   min-height: 500px;
-   padding: 40px 20px;
+   max-height: 600px;
+   padding: 40px 20px 20px;
 
    background-color: #ffb8ca;
    &--orange {
@@ -300,7 +300,7 @@
 }
 
 .products__text {
-   margin-bottom: 15px;
+   margin-bottom: 10px;
 	font-family: var(--font-base);
 	font-weight: 700;
 	font-size: 12px;
@@ -324,7 +324,7 @@
 }
 
 .products__img {
-   width: 30%;
+   width: 50%;
 }
 
 .h {
