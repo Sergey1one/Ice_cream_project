@@ -24,20 +24,18 @@
     @include desk {
         padding-top: 40px;
     }
-
 }
 
 .site-nav {
     display: none;
 
-@include desk {
+    @include desk {
     display: flex;
-}
+    }
 }
 
 .site-nav__list {
     display: flex;
-
     z-index: 2;
 }
 
@@ -50,36 +48,33 @@
 }
 
 .site-nav__link {
-@include desk {
+    @include desk {
     
     color: #fff;
     font-weight: 700;
     font-size: 16px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-&:hover, &:focus {
+    }
+
+    &:hover, &:focus {
     color: var(--color-accent);
-}
+    }
 }
 
 .header-btn__list {
     z-index: 8;
+
     @include tab {
         display: flex;
         align-items: center;
     }
 }
 
-.menu-btn__icon {
-    // fill: currentColor;
-}
-
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .hero__btn-icon--light {
@@ -92,33 +87,29 @@
     border: none;
     background-color: #fff;
     fill: var(--color-accent);
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
 background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @include desk {
     height: 26px;
     width: 26px;
     }
-&:hover, &:focus {
+
+    &:hover, &:focus {
     background-color: #ECEBEB;
-   
-   
+    }
 }
-}
-
-
 
 .menu-btn {
-   background: transparent;
-   border: transparent;
+    background: transparent;
+    border: transparent;
 
     @include tab {
         margin-right: 32px;
-        
     }
 
     @include desk {
-display: none;
+    display: none;
     }
 }
 
@@ -127,7 +118,6 @@ display: none;
 
     @include tab {
         display: block;
-        
     }
 }
 
@@ -138,6 +128,7 @@ display: none;
 .header__btn-icon--margin {
     margin-left: 12px;
 }
+
 // HERO************
 
 .hero {
@@ -146,12 +137,12 @@ display: none;
     @media screen and (max-width: 386px) { 
         overflow: hidden;
     }
-   @include tab {
+
+    @include tab {
     height: 334px;
-   }
+    }
 
     @include desk {
-        
         height: 574px;
     }
 }
@@ -182,7 +173,7 @@ display: none;
 
     @include desk {
         padding-top: 49px;
-}
+    }
 }
 
 .hero__title {
@@ -231,38 +222,38 @@ display: none;
 }
 
 .hero__btn-link {
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-font-size: 8px;
-line-height: 1.25;
-border-radius: 20px;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
 
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 
-@include desk {
+    @include desk {
     font-size: 14px;
-}
+    }
 }
 
 .hero__btn-link--dark {
-height: 24px;
-width: 62px;
-color: #fff;
-background-color: var(--color-accent);
+    height: 24px;
+    width: 62px;
+    color: #fff;
+    background-color: var(--color-accent);
 
-@include desk {
-    width: 107px;
-    height: 40px;
-}
+    @include desk {
+        width: 107px;
+        height: 40px;
+    }
 
-&:hover, 
-&:focus {
-    background-color: var(--color-accent-dark);
-}
+    &:hover, 
+    &:focus {
+        background-color: var(--color-accent-dark);
+    }
 }
 
 .hero__btn-link--light {
@@ -287,7 +278,7 @@ animation: animate30 3000ms infinite 1000ms;
 
 &::before {
     content: ""
-}
+    }
 
 @keyframes animate30 {
     0% {
@@ -301,9 +292,9 @@ animation: animate30 3000ms infinite 1000ms;
     100% {
         transform: rotate(0deg);
     }
-}
+    }
 
- @media screen and (max-width:767px) {
+    @media screen and (max-width:767px) {
         display: none;
     }
 
@@ -348,7 +339,6 @@ display: none;
     @include desk {
         width: 200px;
         font-size: 14px;
-            
 }
 }
 
@@ -359,7 +349,7 @@ display: none;
         display: flex;
         flex-direction: column;
         margin-top: 18px;
-     }
+    }
 
     @include desk {
         margin-top: 69px;
@@ -368,8 +358,6 @@ display: none;
 
 .hero__item {
     font-size: 8px;
-
-   
 }
 
 .hero__item-numbers {
@@ -410,37 +398,10 @@ display: none;
     }
 }
 
-.ice-cream__wrap--ellipse {
-    width: 346px;
-    height: 344px;
-    background-color: var(--color-accent-medium);
-    border-radius: 50%;
-    transition: background-color 500ms linear,
-    transform 500ms ease-in-out;
-    
-
-
-    @include tab {
-        width: 335px;
-        height: 333px;
-    }
-
-    @include desk {
-        width: 534px;
-        height: 534px;
-
-    }  
-
-     &:hover {
-        background-color: var(--color-accent);
-     }
-}
-
 .ice-cream__wrap--top-img {
     position: absolute;
     top: 9px;
     left: 81px;
-    width: 236px;
 
     animation: animateY110 1500ms 1 200ms;
 
@@ -452,7 +413,7 @@ display: none;
         0% {
             transform: translateY(100%);
         }
-    
+
         100% {
             transform: translateY(0);
         }
@@ -461,21 +422,36 @@ display: none;
     @include tab {
         top: 37px;
         left: 74px;
-        // height: 336px;
     }
 
     @include desk {
-        height: 556px;
         top: 54px;
         left: 119px;
     }
+
+    &:hover+.ice-cream__wrap--ellipse {
+        background-color: var(--color-accent);
+    }
 }
 
-// .ice-cream__wrap--top-img {
-//     max-width: 100%;
-//     height: auto;
-// }
+.ice-cream__wrap--ellipse {
+    width: 346px;
+    height: 344px;
+    background-color: var(--color-accent-medium);
+    border-radius: 50%;
+    transition: background-color 500ms linear,
+    transform 500ms ease-in-out;
+    
+    @include tab {
+        width: 335px;
+        height: 333px;
+    }
 
+    @include desk {
+        width: 534px;
+        height: 534px;
+    }  
+}
 
 .hero__img--right {
     display: none;
@@ -484,7 +460,6 @@ display: none;
     animation-duration: 1.5s;
     animation-timing-function: linear;
     // animation-iteration-count: infinite;
-    
     
     @keyframes move {
         0% {
@@ -525,6 +500,7 @@ display: none;
         font-size: 14px;
     }
 }
+
 .hero__item-text--cafe {
     padding-left: 35%;
 }

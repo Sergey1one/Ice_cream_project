@@ -33,12 +33,13 @@
     </div>
     <include src="./partials/mobmenu.html"></include>
   </header>
-  
+
+  <main>
     <section class="hero">
       <div class="container hero-container">
         <div class="hero-sections">
           <!-- hero left section heading modal text -->
-      <div class="hero__wrap">
+            <div class="hero__wrap">
         <h1 class="hero__title">
           ice cream<br />
           made with<br /><span class="hero__title--dark-part">passion</span>
@@ -74,9 +75,8 @@
           </li>
         </ul>
 
-        <div class="ice-cream__wrap">
-        <div class="ice-cream__wrap--ellipse"></div>
-        <!-- <div class="ice-cream__wrap-img"> -->
+<!-- hero pictures for positioning -->
+    <div class="ice-cream__wrap">
           <picture class="ice-cream__wrap--top-img" >
           <source
             srcset="
@@ -94,12 +94,10 @@
             media="(max-width: 767px)"
           />
           <img src="./images/desktop/hero-desktop-x1.png" alt="huge ice cream" />
-        </picture></div>
-        
-      <!-- </div> -->
-      
+        </picture>
+      <div class="ice-cream__wrap--ellipse"></div>
+    </div>
 
-<!-- hero pictures for positioning -->
         <picture class="hero__img--left">
           <source
             srcset="./images/desktop/jug-desktop-x1.png 1x, ./images/desktop/jug-desktop-x2.png 2x"
@@ -112,8 +110,7 @@
           <img src="./images/desktop/jug-desktop-x1.png" alt="jug with milk" />
         </picture>
 
-
-  <picture class="hero__img--right">
+        <picture class="hero__img--right">
           <source
             srcset="
               ./images/desktop/hero-woman-desktop-x1.png 1x,
