@@ -5,11 +5,14 @@
   line-height: 1.86;
 }
 .contacts {
+  padding-bottom: 48px;
   background: linear-gradient(to bottom, #ffffff 23%, var(--color-bg-light) 23%);
   @include tab {
+    padding-bottom: 40px;
     background: linear-gradient(to bottom, #ffffff 20%, var(--color-bg-light) 20%);
   }
   @include desk {
+    padding-bottom: 60px;
     background: linear-gradient(to bottom, #ffffff 16%, var(--color-bg-light) 16%);
   }
 }
