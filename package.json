@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://ArkZaslavskyi.github.io/ice-cream-project-1",
+  "homepage": "https://Sergey1one.github.io/Ice_cream_project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream-project-1/"
+    "build": "parcel build src/*.html --public-url /Ice_cream_project/"
   },
   "repository": {
     "type": "git",
